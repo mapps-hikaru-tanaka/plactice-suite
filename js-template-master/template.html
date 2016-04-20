@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<style>
+#template {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div id='target' align="center"></div>
+<script type='text/tanaka-template'>
+<div align="center">
+  <p>{{TITLE}}</p>
+  <p>{{DISCRIPTION}}</p>
+  <img src='{{IMG_SRC}}' width='300' height='250' />
+</div>
+</script>
+
+<script>
+  new TanakaTemplate(
+    {
+      TITLE: 'タイトルだよーん♪',
+      DISCRIPTION: '様々な事象について諸々を諸々するよね',
+      IMG_SRC: 'http://person-link.co.jp/wp-content/uploads/2015/03/ec_pl2.png'});
+</script>
+</body>
+</html>
